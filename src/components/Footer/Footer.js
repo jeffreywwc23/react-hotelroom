@@ -59,7 +59,7 @@ export default function Footer() {
       </div>
 
       <p className="copyrights">
-        &copy; 2022 Jeffreywwc - HKTravelRooms.com - All rights reserved
+        &copy; 2022 Jeffreywwc - Hotelroom.com - All rights reserved
       </p>
     </footer>
   );
