@@ -53,7 +53,7 @@ const Home = () => {
     <>
       <Hero>
         <Banner
-          title="TravelRooms.com"
+          title="Hotelroom.com"
           subtitle="YOUR ROOMS BOOKING ASSISTANT IN YOUR JOURNEY"
         >
           <Link to="/rooms" className="banner-btn">
