@@ -1,0 +1,198 @@
+.blogs-container {
+  padding: 60px 0;
+  --blog-img-height: 200px;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff,
+    #c0c0c6,
+    #838590,
+    #4a4e5e,
+    #141e30
+  );
+}
+
+.blogs-container a {
+  text-decoration: none;
+  color: var(--mainWhite);
+}
+
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  margin: 0 40px;
+}
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  background-color: #141e30;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  position: relative;
+}
+
+.blog .blog-img {
+  visibility: hidden;
+  width: 100%;
+  height: var(--blog-img-height);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.blog:hover {
+  transform: translateY(-7px);
+}
+
+.blog .blog-img-hovered {
+  --blog-img-hovered-overlay: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0)
+  );
+  transition: all 350ms ease-in-out;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  position: absolute;
+  height: var(--blog-img-height);
+  top: 0;
+}
+
+.blog .blog-info {
+  color: var(--mainWhite);
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  transition: all 200ms ease-in-out;
+}
+
+.blog .blog-info .blog-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  transition: all 200ms ease-in-out;
+}
+
+.blog .blog-info .blog-about .blog-tag {
+  width: 60px;
+  max-width: 120px;
+  padding: 0.2rem 0.5rem;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #505f79;
+  color: var(--mainWhite);
+}
+
+.blog .blog-info .blog-about .blog-tag.tag-travelogue {
+  background: #36b37e;
+  width: 105px;
+}
+.blog .blog-info .blog-about .blog-tag.tag-hotel {
+  background: #ffab00;
+}
+
+.blog .blog-info .blog-about .blog-tag.tag-promotion {
+  background: #e100ff;
+  width: 105px;
+}
+
+.blog .blog-info .blog-about .blog-tag.tag-tips {
+  background: #ff5630;
+}
+
+.blog .blog-info .blog-title {
+  z-index: 10;
+  font-size: 1.3rem;
+  padding-bottom: 0.75rem;
+  transition: all 350ms ease-in-out;
+}
+
+.blog .blog-info .blog-time {
+  display: flex;
+  align-items: center;
+}
+
+.blog .blog-info .blog-time svg {
+  margin: 0 10px;
+}
+
+.blog .blog-info .blog-creator {
+  padding-bottom: 0.75rem;
+  transition: all 250ms ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+.blog:hover {
+  cursor: pointer;
+  box-shadow: 0px 15px 35px rgba(227, 252, 239, 0.1),
+    0px 5px 15px rgba(0, 0, 0, 0.07);
+  transform: scale(1.025);
+}
+
+.blog:hover .blog-img-hovered {
+  --blog-img-hovered-overlay: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.65)
+  );
+  height: 100%;
+}
+
+.blog:hover .blog-about,
+.blog:hover .blog-creator {
+  opacity: 0;
+}
+.blog:hover .blog-info {
+  background-color: transparent;
+}
+.blog:hover .blog-title {
+  color: var(--primaryColor);
+  transform: translate(0, 40px);
+}
+
+@media only screen and (min-width: 1800px) {
+  .blogs {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .blogs {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px;
+  }
+
+  .blog .blog-info .blog-time {
+    font-size: 14px;
+  }
+
+  .blog .blog-info .blog-title {
+    font-size: 0.9rem;
+  }
+
+  .blog .blog-info .blog-creator {
+    font-size: 14px;
+  }
+}

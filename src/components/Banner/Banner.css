@@ -1,0 +1,155 @@
+.banner {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.55);
+  color: var(--mainWhite);
+  padding: 15rem;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  opacity: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.banner h1 {
+  font-weight: 200;
+  font-size: 3.5rem;
+  opacity: 0;
+}
+
+.banner div {
+  width: 18rem;
+  height: 5px;
+  background: var(--primaryColor);
+  margin: 1.7rem auto;
+  opacity: 0;
+}
+
+.banner p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  opacity: 0;
+}
+
+.banner span {
+  opacity: 0;
+}
+
+.banner-btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 35px;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainBlack);
+  background: var(--primaryColor);
+  padding: 6px 10px;
+  border: 3px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.banner-btn:hover {
+  background: transparent;
+  color: var(--primaryColor);
+}
+
+@media screen and (min-width: 1550px) {
+  .banner {
+    padding: 18 24rem;
+  }
+
+  .banner h1 {
+    font-size: 5rem;
+  }
+
+  .banner p {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .banner {
+    padding: 12rem;
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+
+  .banner-btn {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .banner {
+    padding: 9rem 5.5rem;
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+
+  .banner-btn {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 698px) {
+  .banner {
+    padding: 8rem 4rem;
+  }
+  .banner h1 {
+    font-size: 1.8rem;
+  }
+
+  .banner p {
+    font-size: 0.8rem;
+  }
+
+  .banner-btn {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner {
+    padding: 8rem 1.5rem;
+  }
+  .banner h1 {
+    font-size: 1.6rem;
+  }
+
+  .banner p {
+    font-size: 0.8rem;
+  }
+
+  .banner-btn {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 473px) {
+  .banner {
+    padding: 8rem 1rem;
+  }
+  .banner h1 {
+    font-size: 1.5rem;
+  }
+
+  .banner p {
+    font-size: 14px;
+  }
+
+  .banner-btn {
+    font-size: 9px;
+  }
+}

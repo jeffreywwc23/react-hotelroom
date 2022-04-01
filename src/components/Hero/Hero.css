@@ -1,0 +1,22 @@
+.defaultHero,
+.roomsHero,
+.aboutUsHero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  min-height: calc(100vh - 20px);
+}
+
+.defaultHero {
+  background: url("../../images/defaultBcg.jpeg") center/cover no-repeat;
+}
+
+.roomsHero {
+  background: url("https://www.wanchai.dorsetthotels.com/images/site-specific/rooms/rooms-gallery/grand-deluxe-course-view-room/thumbnail/grand-deluxe-course-view-room.jpg")
+    center/cover no-repeat;
+}
+
+.aboutUsHero {
+  background: url("../../images/about-us.jpg") center/cover no-repeat;
+}

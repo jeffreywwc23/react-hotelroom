@@ -1,0 +1,288 @@
+.sign-up-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 200px;
+  /* font-family: "Open Sans", sans-serif; */
+  /* background: linear-gradient(105deg, #2b140b 45%, #ffffff 45%, #ffffff 100%); */
+  background: linear-gradient(
+    90deg,
+    var(--mainBlack) 50%,
+    #ffffff 50%,
+    #ffffff 100%
+  );
+}
+
+.sign-up-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sign-up-wrapper .sign-up-btn,
+.sign-up-wrapper .social-single-sign-up {
+  padding: 0.8em 3.5em;
+  text-transform: uppercase;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  outline: none;
+  border: none;
+  letter-spacing: 1px;
+}
+
+.sign-up-wrapper .sign-up-btn:hover,
+.sign-up-wrapper .social-single-sign-up:hover {
+  box-shadow: 0px 10px 20px rgba(43, 20, 11, 0.315);
+  transition: all 0.3s ease-in-out 0s;
+  transform: translateY(-2px);
+}
+
+.sign-up-wrapper p {
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+.sign-up-wrapper .sign-up-left {
+  color: var(--mainWhite);
+  margin: auto auto auto 0;
+  padding: 0 100px;
+  width: 50%;
+  text-align: center;
+}
+
+.sign-up-wrapper .sign-up-left .sign-up-btn {
+  border: 1px solid var(--mainWhite);
+  color: var(--mainWhite);
+  background-color: var(--mainBlack);
+  margin: 15px 0;
+}
+
+.sign-up-wrapper .sign-up-left .sign-up-btn:hover {
+  background-color: var(--mainWhite);
+  color: var(--mainBlack);
+}
+
+.sign-up-wrapper .sign-up-right {
+  width: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--mainBlack);
+}
+
+.sign-up-right h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.sign-up-wrapper .sign-up-right .sign-up-btn {
+  width: 100%;
+  margin-top: 25px;
+  background-color: var(--mainBlack);
+  color: var(--mainWhite);
+}
+
+.sign-up-wrapper .sign-up-right .sign-up-btn:hover {
+  background: var(--primaryColor);
+}
+
+.sign-up-wrapper .sign-up-right p {
+  text-align: center;
+}
+
+.sign-up-wrapper .sign-up-right form label {
+  font-size: 14px;
+  font-weight: 600px;
+  text-transform: capitalize;
+}
+
+.sign-up-wrapper .sign-up-right input[type="text"],
+.sign-up-wrapper .sign-up-right input[type="email"],
+.sign-up-wrapper .sign-up-right input[type="password"] {
+  display: block;
+  width: 300px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 2px solid #c4c4c4;
+  padding: 15px 20px;
+  margin-bottom: 18px;
+  font-size: 15px;
+}
+
+.sign-up-wrapper .sign-up-right form input::placeholder {
+  font-size: 16px;
+  color: #939aaf;
+}
+
+.sign-up-wrapper .sign-up-right form .password {
+  position: relative;
+}
+
+.sign-up-wrapper .sign-up-right form span {
+  font-size: 14px;
+}
+
+.sign-up-wrapper .sign-up-right form span a {
+  text-decoration: none;
+}
+
+.sign-up-wrapper .sign-up-right .sign-up-social-title {
+  font-size: 15px;
+}
+
+.sign-up-wrapper .sign-up-right .social-sign-up-icons-group {
+  display: flex;
+}
+
+.sign-up-wrapper
+  .sign-up-right
+  .social-sign-up-icons-group
+  .social-single-sign-up {
+  margin: 5px;
+  background-color: transparent;
+  border: 1px solid var(--mainBlack);
+  color: var(--mainBlack);
+}
+
+.sign-up-wrapper
+  .sign-up-right
+  .social-sign-up-icons-group
+  .social-single-sign-up:hover {
+  background-color: var(--primaryColor);
+}
+
+.sign-up-wrapper .sign-up-right .social-sign-up-icons-group .social-icons {
+  font-size: 20px;
+}
+
+.sign-up-wrapper .eye {
+  position: absolute;
+  top: 15px;
+  right: 5px;
+  background: white;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1280px) {
+  .sign-up-container {
+    background: var(--mainWhite);
+    padding: 0;
+  }
+
+  .sign-up-wrapper .sign-up-left {
+    width: 100%;
+    height: 700px;
+    background: var(--mainBlack);
+    padding: 200px 150px;
+    color: var(--mainWhite);
+  }
+
+  .sign-up-wrapper .sign-up-right {
+    width: 500px;
+    color: var(--mainBlack);
+    margin: 150px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .sign-up-container {
+    background: var(--mainWhite);
+    padding: 0;
+  }
+
+  .sign-up-wrapper .sign-up-left {
+    width: 100%;
+    height: 700px;
+    background: var(--mainBlack);
+    padding: 200px 150px;
+    color: var(--mainWhite);
+  }
+
+  .sign-up-wrapper .sign-up-right {
+    width: 100%;
+    color: var(--mainBlack);
+    margin: 100px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .sign-up-container {
+    background: var(--mainWhite);
+  }
+
+  .sign-up-wrapper .sign-up-left {
+    width: 100%;
+    background: var(--mainBlack);
+    height: 700px;
+    padding: 200px 150px;
+    color: var(--mainWhite);
+  }
+
+  .sign-up-wrapper .sign-up-right {
+    width: 100%;
+    margin: 100px 50px;
+  }
+
+  .sign-up-wrapper .sign-up-right .social-sign-up-icons-group {
+    display: unset;
+  }
+
+  .sign-up-wrapper
+    .sign-up-right
+    .social-sign-up-icons-group
+    .social-single-sign-up {
+    display: flex;
+  }
+
+  .sign-up-wrapper .sign-up-left .sign-up-btn:hover {
+    background-color: var(--primaryColor);
+    color: var(--mainBlack);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sign-up-container {
+    background: var(--mainWhite);
+  }
+
+  .sign-up-wrapper .sign-up-left {
+    width: 100%;
+    height: 700px;
+    background: var(--mainBlack);
+    padding: 200px 150px;
+    color: var(--mainWhite);
+    padding: 200px 0;
+  }
+
+  .sign-up-wrapper .sign-up-right {
+    width: 100%;
+    margin: 100px auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sign-up-container {
+    background: var(--mainWhite);
+  }
+
+  .sign-up-wrapper .sign-up-left {
+    width: 100%;
+    height: 700px;
+    background: var(--mainBlack);
+    padding: 200px 150px;
+    color: var(--mainWhite);
+    padding: 200px 0;
+  }
+
+  .sign-up-wrapper .sign-up-right {
+    width: 300px;
+    margin: 100px auto;
+  }
+}
