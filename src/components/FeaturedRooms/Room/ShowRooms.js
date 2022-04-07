@@ -15,17 +15,17 @@ export default function ShowRooms({ rooms }) {
         })}
       </div>
 
-      {/* <div className="featured-rooms-button">
+      <div className="featured-rooms-button">
         <Link to="/rooms">
           <button className="btn-primary">More</button>
         </Link>
-      </div> */}
+      </div>
 
-      <div className="featured-rooms-button">
+      {/* <div className="featured-rooms-button">
         <a href="/rooms">
           <button className="btn-primary">More</button>
         </a>
-      </div>
+      </div> */}
     </section>
   );
 }
