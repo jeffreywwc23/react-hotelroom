@@ -33,10 +33,8 @@ const SignUp = () => {
         <div className="sign-up-left">
           <h1>Already Have An Account?</h1>
           <p>Sign in to get up-to-date information!</p>
-          <Link to="/sign-in">
-            <button type="submit" className="sign-up-btn">
-              Sign In
-            </button>
+          <Link to="/">
+            <button className="sign-up-btn">Sign In</button>
           </Link>
         </div>
 
@@ -121,9 +119,9 @@ const SignUp = () => {
               </div>
             </div>
 
-            <button type="submit" className="sign-up-btn">
-              sign up
-            </button>
+            <Link to="/">
+              <button className="sign-up-btn">sign up</button>
+            </Link>
           </form>
 
           <p className="sign-up-social-title">Or Sign Up By Using</p>

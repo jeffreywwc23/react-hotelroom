@@ -25,10 +25,8 @@ const SignIn = () => {
         <div className="sign-in-left">
           <h1>Newcomers?</h1>
           <p>Sign up to enjoy member rewards and engage with our community!</p>
-          <Link to="/sign-up">
-            <button type="submit" className="sign-in-btn">
-              Sign Up
-            </button>
+          <Link to="/">
+            <button className="sign-in-btn">Sign Up</button>
           </Link>
         </div>
 
@@ -65,9 +63,9 @@ const SignIn = () => {
               </div>
             </div>
 
-            <button type="submit" className="sign-in-btn">
-              sign in
-            </button>
+            <Link to="/">
+              <button className="sign-in-btn">sign in</button>{" "}
+            </Link>
           </form>
 
           <p className="sign-in-social-title">Or Sign In By Using</p>
